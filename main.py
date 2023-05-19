@@ -215,6 +215,7 @@ def AStar():
 
                 # check if child state is already in the frontier, replace the priority of him if she is better
                 for currentPriority, element, elementPath in frontier.queue:
+                    
                     if childState == element and childCost < currentPriority:
                         update = True
 
